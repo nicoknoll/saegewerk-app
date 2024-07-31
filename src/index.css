@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+body {
+  --color-theme-50: 143, 76%, 97%;
+  --color-theme-100: 144, 84%, 93%;
+  --color-theme-200: 145, 79%, 85%;
+  --color-theme-300: 145, 75%, 73%;
+  --color-theme-400: 145, 68%, 58%;
+  --color-theme-500: 146, 70%, 45%;
+  --color-theme-600: 146, 75%, 36%;
+  --color-theme-700: 146, 70%, 29%;
+  --color-theme-800: 146, 63%, 24%;
+  --color-theme-900: 148, 61%, 20%;
+  --color-theme-950: 149, 80%, 10%;
+
+  --color-kdp-yellow: 58, 100%, 50%;
+  --color-kdp-yellow-light: 58, 100%, 80%;
+  --color-kdp-purple: 276, 100%, 70%;
+  --color-kdp-red: 0, 100%, 50%;
+  --color-kdp-green: 154, 61%, 51%;
+  --color-kdp-green-alt: 175, 61%, 51%;
+  --color-kdp-white: 0, 0%, 100%;
+
+  --color-primary: 0, 0%, 0%;
+  --color-alternate: 58, 100%, 50%;
+
+  .theme-alternate {
+    --color-primary: 58, 100%, 50%;
+    --color-alternate: 0, 0%, 0%;
+  }
+}
+
+.leaflet-div-icon {
+  background-color: transparent;
+  border: none;
+}
+
+.ol-overlaycontainer-stopevent {
+  display: none;
+}
+
+
+@layer utilities {
+  .uppercase-middle {
+    margin-bottom: -0.26ex;
+    line-height: 1 !important;
+  }
+
+  .font-headline {
+    @apply font-sans;
+    font-variation-settings: 'wght' 700, 'wdth' 125;
+    font-weight: normal;
+  }
+
+  .font-title {
+    @apply font-sans;
+    font-variation-settings: 'wght' 450, 'wdth' 100;
+    font-weight: normal;
+  }
+
+  .font-item {
+    @apply font-sans;
+    font-variation-settings: 'wght' 500, 'wdth' 110;
+    font-weight: normal;
+  }
+}
